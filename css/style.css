@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--font-sans);
+}
+
+:root{
+  --light-bg: rgb(255, 248, 243);
+  --btn-color: rgb(253, 110, 10);
+  --font-sans: "Open Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --hover-color: rgb(221, 101, 15);
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-poppins);
+}
+
+header{
+  position: relative;
+  background: var(--light-bg);
+  height: 98vh;
+}
+nav{
+  padding-block: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  max-width: 1180px;
+  margin: auto;
+  padding-inline: 12px;
+}
+/* nav .logo > h3 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+nav .logo > h3 > span{
+  color: var(--btn-color);
+} */
+
+.logo {
+  width: 250px;
+}
+
+.logo img {
+  width: 100%;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+}
+nav ul li{
+  list-style: none;
+  margin-right: 40px;
+}
+nav li a{
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.537);
+  padding: 4px 6px;
+  font-weight: 600;
+}
+nav li a:hover{
+  color: var(--hover-color);
+}
+.button{
+  border: none;
+  outline: 0;
+  background: var(--btn-color);
+  transition: all .3s;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+.button > a{
+  font-size: 17px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.948);
+  display: block;
+  padding: 12px 24px;
+}
+.button:hover{
+  background: var(--hover-color);
+}
+.hero-banner{
+  display: flex;
+  padding-top: 100px;
+  margin-left: 100px;
+}
+.dev-text {
+  position: absolute;
+  left: -297px;
+  top: 300px;
+  transform: rotate(270deg);
+  opacity: .1;
+  font-size: 72px;
+  letter-spacing: 30px;
+  font-weight: bold;
+}
+.hero-content{
+width: 44%;
+padding-left: 50px;
+padding-top: 60px;
+}
+.hero-content > h3{
+  font-size: 30px;
+  font-weight: 500;
+}
+.hero-content > h1{
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.hero-content > h1 > span{
+  color: var(--btn-color);
+}
+.hero-content > p{
+  font-size: 17px;
+  line-height: 28px;
+  opacity: .9;
+}
+.hero-image-bg{
+  background: url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-image{
+width: 54%;
+height: 504px;
+overflow: hidden;
+}
+.hero-image img{
+  width: 100%;
+}
+.hero-btn {
+  margin-top: 34px;
+  gap: 20px;
+  display: flex;
+}
+
+.hero-btn .button > a {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- About ---------- */
+
+#about{
+  padding-block: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.about-container{
+  max-width: 827px;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+.about-container h2{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.about-container p {
+  line-height: 30px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  opacity: .7;
+}
+
+.my-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10px;
+}
+.info-box{
+  width: 24%;
+}
+.info-box > p {
+  font-weight: 600;
+  opacity: .5;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.info-box h5{
+  font-size: 17px;
+  font-weight: 600;
+}
+.shadow-box {
+  position: absolute;
+  left: 50%;
+  top: 17%;
+  z-index: -2;
+  width: 900px;
+  height: 456px;
+  background: var(--light-bg);
+  border-radius: 10px;
+}
+/* --------- What I Do --------- */
+#whatIdo{
+  padding-block: 100px;
+}
+.container{
+  max-width: 1180px;
+  margin: auto;
+  padding-inline: 15px
+}
+.i-do-head {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.i-do-head > h2{
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+.i-do-head > p{
+  line-height: 26px;
+  color: rgb(117, 117, 117);
+
+}
+.technologies{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 50px;
+}
+.technology-box{
+  width: 24%;
+  padding: 25px;
+  box-shadow: 0px 0px 53px rgb(242 235 235);
+}
+.technology-box h4 {
+  margin-block: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.technology-box p {
+  line-height: 26px;
+  font-size: 17px;
+  color: rgb(117, 117, 117);
+}
+
+/* ----------- Footer -----------  */
+footer{
+  padding-block: 90px;
+  background: var(--light-bg);
+}
+.container.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  width: 48%;
+}
+
+.footer-right {
+  width: 38%;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 12px;
+  outline: none;
+  border: none;
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: var(--font-poppins);
+}
+textarea{
+  resize: vertical;
+  height: 100px;
+}
+input::placeholder, textarea::placeholder{
+  font-size: 14px;
+  font-family: var(--font-sans);
+  opacity: .7;
+}
+
+.footer-left h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: rgb(25 25 25);
+}
+
+.footer-left p {
+  line-height: 26px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icon a {
+  font-size: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  color: var(--btn-color);
+  transition: all .5s;
+}
+.social-icon a:hover{
+  transform: scale(1.1);
+  color: var(--hover-color);
+}
+
+.footer-right h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(25 25 25);
+  margin-bottom: 25px;
+}
+
+.footer-right button {
+  border: none;
+  outline: 0;
+  background: var(--btn-color);
+  transition: all .3s;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 17px;
+  color: #fff;
+  padding: 12px 24px;
+  margin-top: 12px;
+  cursor: pointer;
+}
